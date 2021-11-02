@@ -1,0 +1,195 @@
+.dropbtn {
+    color: white;
+    padding: 4px 22px;
+    letter-spacing: .015em;
+    font-size: 16px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .dropdown {
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 600px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  /* .dropdown-content a:hover {background-color: rgb(179, 42, 42);} */
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: white; text-decoration: underline;
+  color: #623381; font-weight: bold;
+  }
+  .bg{
+    background-color: #623381;
+    height: 35px;
+    width: 100%;
+  }
+  
+  *{
+    box-sizing: border-box;
+    font-family: lato, sans-serif;
+  }
+  
+  .column {
+    float: left;
+    width: 200px;
+    padding: 10px;
+    height: 300px;
+    background-color: white;
+  }
+  
+  ul{
+  margin-left:-40px;
+  }
+  
+  ul:hover {
+      color: #C50D72;
+      text-decoration: underline;
+  }
+  
+  .nav-barCenter {
+      width: 90%;
+      margin: auto;
+  }
+  
+  ion-icon {
+      font-size: 17px;
+  }
+  
+  .icon-span {
+      margin-bottom: -10px;
+  }
+   /* Header Upper Part Narendra */
+    #header{
+       height: 100px;
+       display: grid;
+       grid-template-columns: 25% 25% 25%;
+       grid-gap: 8%;
+   }
+  
+  #header>div >img{
+      height: 100px;
+  
+  
+  }
+   #inputdata{
+      border:none;
+      width: 93%;
+      color: #623381;
+      height: 30px;
+      font-size: 15px;
+  
+  }
+  
+  #searchbar{
+      margin-top: 20px;
+  border: 2px solid #623381 ;
+  color: #623381;
+  border-radius: 5px;
+  
+  }
+  #headermiddle> div >ion-icon{
+   height: 15px;
+  }
+  #searchbar + div{
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+  }
+  #searchbar + div> button{
+   border: none;
+   padding: 4px;
+   color: #851ccc;
+   background-color: white;
+  }
+  #searchbar + div> button:hover{
+      text-decoration: underline;
+  }
+  select{
+      border: none;
+      padding:5px ;
+  
+      text-align: right;
+      color: #471a91;
+  }
+  #header{
+    margin-top: 20px;
+  }
+  #headerend > div{
+     text-align: right;
+     color: #521B76;
+  
+  }
+  #headerend > div>button{
+      padding:5px ;
+      border: none;
+      background: white;
+      color: #521B76;
+  }
+  #headerend > div>button:hover{
+    text-decoration: underline;
+  }
+  
+  #headerend div:nth-child(2) {
+    margin-top: 10px;
+    display: block;
+  }
+  #headerend div:nth-child(2) > button{
+  vertical-align: top;
+  font-size: 15px;
+  }
+  #headerend div:nth-child(2) > button > ion-icon{
+    height: 25px;
+    width: 25px;
+    vertical-align: bottom;
+    margin-right: 5px;
+  }
+  /* Middle page all Data Narendra */
+  #middledata{
+    display: grid;
+    grid-template-columns: 25% 60%;
+    margin-left: 10%;
+  }
+
+
+  
+#products > div:nth-child(1){
+  display: flex;
+  flex-direction: row-reverse;
+}
+#products > div:nth-child(1) >select{
+  border: none;
+}
+#products > div:nth-child(1)>div{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#products > div > div >ion-icon{
+  margin-top: 16px;
+  height: 20px;
+  width: 20px;
+  border:1px solid #471a91;
+  color: #471a91;
+
+}
+#products > div > div{
+  color: #471a91;
+}
+#products > div > div >ion-icon:hover{
+  color: #b48df3;
+}
+#products > div > div > p{
+  font-size: 10px;
+    line-height: 1px;
+}
+#products > div >select{
+  padding: 5px;
+  margin: 20px;
+}
+#products > div > p{
+  padding-top: 5px;
+  font-size: 13px;
+}
