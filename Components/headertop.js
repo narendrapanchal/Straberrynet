@@ -36,7 +36,7 @@ function headerupper(){
 function navbarbelow(){
   return `<div class="nav-barCenter">
   <div class="dropdown">
-      <div class="dropbtn"><span class="icon-span"><ion-icon name="reorder-three-sharp"></ion-icon></span> SHOP BY BRAND</div>
+      <div class="dropbtn"><ion-icon name="menu"></ion-icon>SHOP BY BRAND</div>
       <div class="dropdown-content">
        <div class="row">
       <div class="column">
@@ -245,7 +245,7 @@ function navbarbelow(){
       </div>
     <!-- 9th -->
       <div class="dropdown">
-        <div class="dropbtn"><span class="icon-span"><ion-icon name="gift-outline"></ion-icon></span> SPECIAL</div>
+        <div class="dropbtn"><ion-icon name="gift-outline"></ion-icon> SPECIAL</div>
         <div class="dropdown-content">
          <div class="row">
         <div class="column">
@@ -269,7 +269,7 @@ function navbarbelow(){
       </div>
       <!-- 10th -->
       <div class="dropdown">
-        <div class="dropbtn"><span class="icon-span"><ion-icon name="star"></ion-icon></span> NEW</div>
+        <div class="dropbtn"><ion-icon name="star"></ion-icon> NEW</div>
         <div class="dropdown-content">
          <div class="row">
         <div class="column">
