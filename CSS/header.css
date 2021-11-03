@@ -178,6 +178,7 @@
   color: #471a91;
 
 }
+
 #products > div > div{
   color: #471a91;
 }
@@ -188,9 +189,13 @@
   font-size: 10px;
     line-height: 1px;
 }
+#products > div > div:nth-child(3) >ion-icon{
+  color: #b48df3;
+}
 #products > div >select{
   padding: 5px;
   margin: 20px;
+  color: #3f1f74;
 }
 #products > div > p{
   padding-top: 5px;
@@ -198,14 +203,15 @@
 }
 /* Skincare Data below*/
 #availableOptions > p{
-  font-size: 10px;
+  font-size: 13px;
   margin-left: 20px;
   margin-top: 3px;
-  line-height: 5px;
+  line-height: px;
 }
 #availableOptions >h5{
   line-height: 1px;
   color: #C50D72;
+  font-size: 17px;
 }
 #availableOptions > h6{
   line-height: 1px;
@@ -222,4 +228,41 @@
  #availableOptions >p:hover{
   text-decoration: underline;
  }  
+
+
+/* Adds Skincare */
+#topskincarebrands{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 4%;
+  background-color:#623381;
+}
+#add{
+  text-align: center;
+background-color: #3f1f74;
+color: white;
+}
+#add > h3{
+   padding-top: 15px;
+   line-height: 1px;
+   color: white;
+}
+h4>span{
+  color: #C50D72;
+}
+#topskincarebrands> div >h5:hover{
+  color: #C50D72;
+
+}
+#add + h4{
+  margin-left: 20px;
+}
+#products > h4{
+  background-color: #3f1f74;
+  color: white;
+  padding:8px;
+}
+hr{
+  width: 95%;
+}
 

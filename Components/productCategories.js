@@ -23,7 +23,32 @@ function skinclick()
   <div id="filters" ></div>
 </div>
 <div>
-<div id="add"></div>
+<div id="add">
+<h3>TOP SKINCARE BRANDS</h3>
+      <div id="topskincarebrands">
+        <div>
+          <h5>BIOTHERM</h5>
+          <h5>DECLEOR</h5>
+          <h5>LANCOME</h5>
+        </div>
+        <div>
+          <h5>CHRISTIAN DIOR</h5>
+          <h5>ELIZABETH ARDEN</h5>
+          <h5>L'OCCITANE</h5>
+        </div>
+        <div>
+          <h5>CLARINS</h5>
+          <h5>ESTEE LAUDER</h5>
+          <h5>SHISEIDO</h5>
+        </div>
+        <div>
+          <h5>CLINIQUE</h5>
+          <h5>GUERLAIN</h5>
+          <h5>SK II</h5>
+        </div>
+      </div>
+</div>
+<h4>9086 results for <span>Skincare</span></h4>
 <hr>
 <div id="products">
   <div >
@@ -43,6 +68,7 @@ function skinclick()
       </div>
       <p>View</p>
   </div>
+  <h4>Skincare</h4>
   <div>
   <div id="product">
    </div>
