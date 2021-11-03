@@ -1,12 +1,11 @@
 .dropbtn {
     color: white;
-    padding: 4px 22px;
     letter-spacing: .015em;
-    font-size: 16px;
     border: none;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
   }
+ 
   .dropdown {
     display: inline-block;
   }
@@ -24,7 +23,6 @@
   }
   .bg{
     background-color: #623381;
-    height: 35px;
     width: 100%;
   }
   
@@ -54,13 +52,16 @@
       width: 90%;
       margin: auto;
   }
-  
-  ion-icon {
-      font-size: 17px;
+  #navbaroptions>div> div> div:nth-child(1)> ion-icon{
+    height: 12px;
+    width: 12px;
   }
   
-  .icon-span {
-      margin-bottom: -10px;
+ 
+  #navbaroptions>div> div> div:nth-child(1){
+    padding: 10px 24px;
+
+
   }
    /* Header Upper Part Narendra */
     #header{

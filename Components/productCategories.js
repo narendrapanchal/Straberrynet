@@ -1,5 +1,10 @@
 function skinclick()
   { let skincare=document.getElementById("skincare");
+  let headerElement=document.querySelectorAll("#navbaroptions>div> div> div:nth-child(1)");
+  headerElement.forEach(element=>{
+    element.style.backgroundColor="#623381";
+    element.style.color="white";
+  })
    skincare.style.backgroundColor="white";
    skincare.style.color="#623381";
    let middleData=document.getElementById("middledata");
