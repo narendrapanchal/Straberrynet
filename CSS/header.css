@@ -108,27 +108,30 @@
   #searchbar + div> button:hover{
       text-decoration: underline;
   }
-  select{
+  #headerend >div> select{
       border: none;
       padding:5px ;
   
       text-align: right;
-      color: #471a91;
+      color: #C50D72;
+
   }
   #header{
     margin-top: 20px;
   }
   #headerend > div{
      text-align: right;
-     color: #521B76;
+     color: #C50D72;
+
   
   }
   #headerend > div>button{
       padding:5px ;
       border: none;
       background: white;
-      color: #521B76;
+      color: #C50D72;
   }
+
   #headerend > div>button:hover{
     text-decoration: underline;
   }
@@ -146,12 +149,12 @@
     width: 25px;
     vertical-align: bottom;
     margin-right: 5px;
+    color: #C50D72;
+
   }
   /* Middle page all Data Narendra */
   #middledata{
-    display: grid;
-    grid-template-columns: 25% 60%;
-    margin-left: 10%;
+       margin-left: 10%;
   }
 
 
@@ -193,3 +196,30 @@
   padding-top: 5px;
   font-size: 13px;
 }
+/* Skincare Data below*/
+#availableOptions > p{
+  font-size: 10px;
+  margin-left: 20px;
+  margin-top: 3px;
+  line-height: 5px;
+}
+#availableOptions >h5{
+  line-height: 1px;
+  color: #C50D72;
+}
+#availableOptions > h6{
+  line-height: 1px;
+  color: #C50D72;
+  
+}
+
+#availableOptions >h5:hover {
+  text-decoration: underline;
+}  
+#availableOptions > h6:hover {
+   text-decoration: underline;
+ }  
+ #availableOptions >p:hover{
+  text-decoration: underline;
+ }  
+

@@ -60,7 +60,7 @@ function navbarbelow(){
     </div>
     <!-- 2nd -->
     <div class="dropdown">
-        <div class="dropbtn">SKINCARE</div>
+        <div id="skincare" onclick="skinclick()" class="dropbtn">SKINCARE</div>
         <div class="dropdown-content">
          <div class="row">
         <div class="column">
@@ -293,35 +293,6 @@ function navbarbelow(){
       </div>
 </div>`;
 }
-function midData(){
-  return `  <div>
-  <div id="availableOptions"></div>
-  <div id="filters" ></div>
-</div>
-<div>
-<div id="add"></div>
-<hr>
-<div id="products">
-  <div >
-    <select name="" id="">
-      <option value="A-Z">SORT BY POPULARITY</option>
-      <option value="A-Z">SORT BY BRAND:A-Z</option>
-      <option value="A-Z">SORT BY BIGGEST DISCOUNT</option>
-      <option value="A-Z">SORT BY LOWEST PRICE</option>
-      <option value="A-Z">SORT BY PRODUCT:A-Z</option>
-    </select>
-    <div><ion-icon name="grid"></ion-icon></ion-icon>
-    <p>Grid</p>
-    </div>
-    <div><ion-icon name="menu"></ion-icon></ion-icon>
-      <p>List</p>
-      </div>
-      <p>View</p>
-  </div>
-  <div>
-  
-   </div>
-</div>
-</div>`;
-}
-export  {headerupper,navbarbelow,midData};
+
+
+export  {headerupper,navbarbelow};
