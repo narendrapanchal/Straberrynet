@@ -2,14 +2,26 @@ function skinclick()
   { let skincare=document.getElementById("skincare");
   let headerElement=document.querySelectorAll("#navbaroptions>div> div> div:nth-child(1)");
   headerElement.forEach(element=>{
-    element.style.backgroundColor="#623381";
-    element.style.color="white";
-  })
-   skincare.style.backgroundColor="white";
+
+    element.addEventListener("mouseover", ( )=> {
+      // highlight the mouseover target
+      element.style.backgroundColor= "white";
+      element.style.color= "#623381";
+    });
+    element.addEventListener("mouseout", () =>{
+      // highlight the mouseover target
+      element.style.color= "white";
+      element.style.backgroundColor= "#623381";
+      skincare.style.backgroundColor="white";
    skincare.style.color="#623381";
+    });
+    
+  })
+   
    let middleData=document.getElementById("middledata");
    middleData.style.display="grid";
-   middleData.style.gridTemplateColumns="25% 60%"
+   middleData.style.gridTemplateColumns="20% 70%"
+   middleData.style.gridGap="1%"
   middleData.innerHTML= ` <div>
   <div id="availableOptions">
   <h6>Skincare</h6>
@@ -28,7 +40,11 @@ function skinclick()
   <div id="filters" ></div>
 </div>
 <div>
+<div>
+<img src="https://a.cdnsbn.com/images/English/category_EarlyBirdSale8offNov21_692_1.jpg" alt="">
+</div>
 <div id="add">
+
 <h3>TOP SKINCARE BRANDS</h3>
       <div id="topskincarebrands">
         <div>
@@ -80,4 +96,4 @@ function skinclick()
    </div>
 </div>
 </div>`
-  }
+}

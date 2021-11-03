@@ -9,6 +9,7 @@
   .dropdown {
     display: inline-block;
   }
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -21,6 +22,7 @@
   .dropdown:hover .dropbtn {background-color: white; text-decoration: underline;
   color: #623381; font-weight: bold;
   }
+
   .bg{
     background-color: #623381;
     width: 100%;
@@ -56,6 +58,7 @@
     height: 12px;
     width: 12px;
   }
+
   
  
   #navbaroptions>div> div> div:nth-child(1){
@@ -73,8 +76,6 @@
   
   #header>div >img{
       height: 100px;
-  
-  
   }
    #inputdata{
       border:none;
@@ -155,7 +156,8 @@
   }
   /* Middle page all Data Narendra */
   #middledata{
-       margin-left: 10%;
+       margin-left: 7%;
+       margin-top: 30px;
   }
 
 
@@ -248,7 +250,7 @@ color: white;
    line-height: 1px;
    color: white;
 }
-h4>span{
+h4 > span{
   color: #C50D72;
 }
 #topskincarebrands> div >h5:hover{
@@ -265,5 +267,11 @@ h4>span{
 }
 hr{
   width: 95%;
+}
+#middledata div:nth-child(2) div:nth-child(1) >img{
+  height: 70px;
+  width: 70%;
+  margin-left: 29%;
+
 }
 
