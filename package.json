@@ -1,0 +1,64 @@
+{
+  "name": "beauty-store-optimized",
+  "version": "1.0.0",
+  "description": "Optimized beauty store website with performance improvements",
+  "main": "navbar.html",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "build:analyze": "webpack --mode production --env analyze",
+    "build:legacy": "npm run build:css && npm run build:js && npm run optimize:images",
+    "build:css": "cleancss -o dist/css/header.min.css CSS/header.css",
+    "build:js": "terser Components/headertop.js Components/productCategories.js -o dist/js/bundle.min.js --compress --mangle",
+    "optimize:images": "imagemin 'images/**/*.{jpg,png,gif,svg}' --out-dir=dist/images --plugin=imagemin-mozjpeg --plugin=imagemin-pngquant",
+    "serve": "http-server . -p 3000 -c-1",
+    "dev": "concurrently \"npm run serve\" \"npm run watch:css\"",
+    "watch:css": "chokidar 'CSS/*.css' -c 'npm run build:css'",
+    "analyze": "bundlesize",
+    "lighthouse": "lighthouse http://localhost:3000 --output html --output-path ./lighthouse-report.html --chrome-flags='--headless'",
+    "perf": "npm run build && npm run serve & npm run lighthouse"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "terser-webpack-plugin": "^5.3.9",
+    "compression-webpack-plugin": "^10.0.0",
+    "webpack-bundle-analyzer": "^4.9.0",
+    "babel-loader": "^9.1.3",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "postcss": "^8.4.27",
+    "postcss-loader": "^7.3.3",
+    "autoprefixer": "^10.4.14",
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.19.4",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "http-server": "^14.1.1",
+    "concurrently": "^8.2.0",
+    "chokidar-cli": "^3.0.0",
+    "bundlesize": "^0.18.1",
+    "lighthouse": "^10.4.0"
+  },
+  "bundlesize": [
+    {
+      "path": "./dist/css/header.min.css",
+      "maxSize": "10kb"
+    },
+    {
+      "path": "./dist/js/bundle.min.js", 
+      "maxSize": "20kb"
+    }
+  ],
+  "keywords": ["beauty", "skincare", "ecommerce", "performance"],
+  "author": "Performance Team",
+  "license": "MIT"
+}

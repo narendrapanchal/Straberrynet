@@ -1,277 +1,53 @@
-.dropbtn {
-    color: white;
-    letter-spacing: .015em;
-    border: none;
-    font-size: 14px;
-    font-weight: bold;
-  }
- 
-  .dropdown {
-    display: inline-block;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 600px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  /* .dropdown-content a:hover {background-color: rgb(179, 42, 42);} */
-  .dropdown:hover .dropdown-content {display: block;}
-  .dropdown:hover .dropbtn {background-color: white; text-decoration: underline;
-  color: #623381; font-weight: bold;
-  }
-
-  .bg{
-    background-color: #623381;
-    width: 100%;
-  }
-  
-  *{
-    box-sizing: border-box;
-    font-family: lato, sans-serif;
-  }
-  
-  .column {
-    float: left;
-    width: 200px;
-    padding: 10px;
-    height: 300px;
-    background-color: white;
-  }
-  
-  ul{
-  margin-left:-40px;
-  }
-  
-  ul:hover {
-      color: #C50D72;
-      text-decoration: underline;
-  }
-  
-  .nav-barCenter {
-      width: 90%;
-      margin: auto;
-  }
-  #navbaroptions>div> div> div:nth-child(1)> ion-icon{
-    height: 12px;
-    width: 12px;
-  }
-
-  
- 
-  #navbaroptions>div> div> div:nth-child(1){
-    padding: 10px 24px;
-
-
-  }
-   /* Header Upper Part Narendra */
-    #header{
-       height: 100px;
-       display: grid;
-       grid-template-columns: 25% 25% 25%;
-       grid-gap: 8%;
-   }
-  
-  #header>div >img{
-      height: 100px;
-  }
-   #inputdata{
-      border:none;
-      width: 93%;
-      color: #623381;
-      height: 30px;
-      font-size: 15px;
-  
-  }
-  
-  #searchbar{
-      margin-top: 20px;
-  border: 2px solid #623381 ;
-  color: #623381;
-  border-radius: 5px;
-  
-  }
-  #headermiddle> div >ion-icon{
-   height: 15px;
-  }
-  #searchbar + div{
-      margin-top: 10px;
-      display: grid;
-      grid-template-columns: 25% 25% 25% 25%;
-  }
-  #searchbar + div> button{
-   border: none;
-   padding: 4px;
-   color: #851ccc;
-   background-color: white;
-  }
-  #searchbar + div> button:hover{
-      text-decoration: underline;
-  }
-  #headerend >div> select{
-      border: none;
-      padding:5px ;
-  
-      text-align: right;
-      color: #C50D72;
-
-  }
-  #header{
-    margin-top: 20px;
-  }
-  #headerend > div{
-     text-align: right;
-     color: #C50D72;
-
-  
-  }
-  #headerend > div>button{
-      padding:5px ;
-      border: none;
-      background: white;
-      color: #C50D72;
-  }
-
-  #headerend > div>button:hover{
-    text-decoration: underline;
-  }
-  
-  #headerend div:nth-child(2) {
-    margin-top: 10px;
-    display: block;
-  }
-  #headerend div:nth-child(2) > button{
-  vertical-align: top;
-  font-size: 15px;
-  }
-  #headerend div:nth-child(2) > button > ion-icon{
-    height: 25px;
-    width: 25px;
-    vertical-align: bottom;
-    margin-right: 5px;
-    color: #C50D72;
-
-  }
-  /* Middle page all Data Narendra */
-  #middledata{
-       margin-left: 7%;
-       margin-top: 30px;
-  }
-
-
-  
-#products > div:nth-child(1){
-  display: flex;
-  flex-direction: row-reverse;
-}
-#products > div:nth-child(1) >select{
-  border: none;
-}
-#products > div:nth-child(1)>div{
-  margin-right: 10px;
-  margin-left: 10px;
-}
-#products > div > div >ion-icon{
-  margin-top: 16px;
-  height: 20px;
-  width: 20px;
-  border:1px solid #471a91;
-  color: #471a91;
-
-}
-
-#products > div > div{
-  color: #471a91;
-}
-#products > div > div >ion-icon:hover{
-  color: #b48df3;
-}
-#products > div > div > p{
-  font-size: 10px;
-    line-height: 1px;
-}
-#products > div > div:nth-child(3) >ion-icon{
-  color: #b48df3;
-}
-#products > div >select{
-  padding: 5px;
-  margin: 20px;
-  color: #3f1f74;
-}
-#products > div > p{
-  padding-top: 5px;
-  font-size: 13px;
-}
-/* Skincare Data below*/
-#availableOptions > p{
-  font-size: 13px;
-  margin-left: 20px;
-  margin-top: 3px;
-  line-height: px;
-}
-#availableOptions >h5{
-  line-height: 1px;
-  color: #C50D72;
-  font-size: 17px;
-}
-#availableOptions > h6{
-  line-height: 1px;
-  color: #C50D72;
-  
-}
-
-#availableOptions >h5:hover {
-  text-decoration: underline;
-}  
-#availableOptions > h6:hover {
-   text-decoration: underline;
- }  
- #availableOptions >p:hover{
-  text-decoration: underline;
- }  
-
-
-/* Adds Skincare */
-#topskincarebrands{
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
-  grid-gap: 4%;
-  background-color:#623381;
-}
-#add{
-  text-align: center;
-background-color: #3f1f74;
-color: white;
-}
-#add > h3{
-   padding-top: 15px;
-   line-height: 1px;
-   color: white;
-}
-h4 > span{
-  color: #C50D72;
-}
-#topskincarebrands> div >h5:hover{
-  color: #C50D72;
-
-}
-#add + h4{
-  margin-left: 20px;
-}
-#products > h4{
-  background-color: #3f1f74;
-  color: white;
-  padding:8px;
-}
-hr{
-  width: 95%;
-}
-#middledata div:nth-child(2) div:nth-child(1) >img{
-  height: 70px;
-  width: 70%;
-  margin-left: 29%;
-
-}
+/* Optimized CSS - Removed duplicates and combined selectors */
+*{box-sizing:border-box;font-family:lato,sans-serif}
+.bg{background-color:#623381;width:100%}
+.nav-barCenter{width:90%;margin:auto}
+#header{height:100px;display:grid;grid-template-columns:25% 25% 25%;grid-gap:8%;margin-top:20px}
+#header>div>img{height:100px}
+#headermiddle>div>ion-icon{height:15px}
+#searchbar{margin-top:20px;border:2px solid #623381;color:#623381;border-radius:5px}
+#inputdata{border:none;width:93%;color:#623381;height:30px;font-size:15px}
+#searchbar+div{margin-top:10px;display:grid;grid-template-columns:repeat(4,25%)}
+#searchbar+div>button{border:none;padding:4px;color:#851ccc;background-color:white}
+#searchbar+div>button:hover{text-decoration:underline}
+#headerend{text-align:right;color:#C50D72}
+#headerend>div>select,#headerend>div>button{border:none;padding:5px;background:white;color:#C50D72}
+#headerend>div>button:hover{text-decoration:underline}
+#headerend div:nth-child(2){margin-top:10px;display:block}
+#headerend div:nth-child(2)>button{vertical-align:top;font-size:15px}
+#headerend div:nth-child(2)>button>ion-icon{height:25px;width:25px;vertical-align:bottom;margin-right:5px;color:#C50D72}
+.dropbtn{color:white;letter-spacing:.015em;border:none;font-size:14px;font-weight:bold}
+.dropdown{display:inline-block}
+.dropdown-content{display:none;position:absolute;background-color:white;min-width:600px;box-shadow:0 8px 16px 0 rgba(0,0,0,0.2)}
+.dropdown:hover .dropdown-content{display:block}
+.dropdown:hover .dropbtn{background-color:white;text-decoration:underline;color:#623381;font-weight:bold}
+.column{float:left;width:200px;padding:10px;height:300px;background-color:white}
+ul{margin-left:-40px}
+ul:hover{color:#C50D72;text-decoration:underline}
+#navbaroptions>div>div>div:nth-child(1){padding:10px 24px}
+#navbaroptions>div>div>div:nth-child(1)>ion-icon{height:12px;width:12px}
+#middledata{margin-left:7%;margin-top:30px}
+#products>div:nth-child(1){display:flex;flex-direction:row-reverse}
+#products>div:nth-child(1)>select{border:none}
+#products>div:nth-child(1)>div{margin:0 10px}
+#products>div>div>ion-icon{margin-top:16px;height:20px;width:20px;border:1px solid #471a91;color:#471a91}
+#products>div>div{color:#471a91}
+#products>div>div>ion-icon:hover{color:#b48df3}
+#products>div>div>p{font-size:10px;line-height:1px}
+#products>div>div:nth-child(3)>ion-icon{color:#b48df3}
+#products>div>select{padding:5px;margin:20px;color:#3f1f74}
+#products>div>p{padding-top:5px;font-size:13px}
+#products>h4{background-color:#3f1f74;color:white;padding:8px}
+#availableOptions>p{font-size:13px;margin-left:20px;margin-top:3px}
+#availableOptions>h5{line-height:1px;color:#C50D72;font-size:17px}
+#availableOptions>h6{line-height:1px;color:#C50D72}
+#availableOptions>h5:hover,#availableOptions>h6:hover,#availableOptions>p:hover{text-decoration:underline}
+#topskincarebrands{display:grid;grid-template-columns:repeat(4,20%);grid-gap:4%;background-color:#623381}
+#add{text-align:center;background-color:#3f1f74;color:white}
+#add>h3{padding-top:15px;line-height:1px;color:white}
+h4>span{color:#C50D72}
+#topskincarebrands>div>h5:hover{color:#C50D72}
+#add+h4{margin-left:20px}
+hr{width:95%}
+#middledata div:nth-child(2) div:nth-child(1)>img{height:70px;width:70%;margin-left:29%}
 
