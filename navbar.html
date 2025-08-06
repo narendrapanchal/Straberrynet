@@ -1,29 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+<meta name="description" content="Beauty and skincare products online store">
+<link rel="preload" href="./CSS/header.css" as="style">
+<link rel="preload" href="./Components/headertop.js" as="script">
+<link rel="preconnect" href="https://unpkg.com">
+<link rel="dns-prefetch" href="https://tse2.explicit.bing.net">
+<link rel="dns-prefetch" href="https://a.cdnsbn.com">
 <link rel="stylesheet" href="./CSS/header.css">
-<!-- api key b567af3a632a084f861405f6079590a167a9dbf3d49ac00a100fd6faaa3fdf7b -->
+<title>Beauty Store - Skincare & Cosmetics</title>
 </head>
 <body>
-    <div id="header"></div>
-    <div id="navbaroptions"  class="bg"></div>
-    <div id="middledata"></div>
-  
+<div id="header"></div>
+<div id="navbaroptions" class="bg"></div>
+<div id="middledata"></div>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script type="module">
+import {headerupper,navbarbelow} from './Components/headertop.js';
+const header=document.getElementById("header");
+header.innerHTML=headerupper();
+const navbaroptions=document.getElementById("navbaroptions");
+navbaroptions.innerHTML=navbarbelow();
+</script>
+<script src="./Components/productCategories.js"></script>
+<script>
+// Register service worker for caching and performance
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(registration => console.log('SW registered:', registration))
+      .catch(error => console.log('SW registration failed:', error));
+  });
+}
+</script>
 </body>
 </html>
-<!-- Header part -->
-<script type="module">
-   import {headerupper,navbarbelow} from './Components/headertop.js';
-  let header=document.getElementById("header");
-  header.innerHTML=headerupper();
-  let navbaroptions=document.getElementById("navbaroptions");
-  navbaroptions.innerHTML=navbarbelow();
-
-</script>
-
-  
-<script src="./Components/productCAtegories.js"></script>
